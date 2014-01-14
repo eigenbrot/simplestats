@@ -29,3 +29,13 @@ def std(vals):
 def var(vals):
     """Computes the variance from a list of values."""
     pass
+
+def median(numlist):
+
+    numlist.sort()
+    idx = len(numlist)/2
+
+    if len(numlist) % 2 == 0:
+        return mean([numlist[idx], numlist[idx - 1]])
+    else:
+        return numlist[idx]
