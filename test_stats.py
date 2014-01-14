@@ -26,6 +26,7 @@ def test_floating_mean1():
     assert_equal(obs, exp)
 
 def test_median1()
+# This is for empty stuff 
     obs = median([])
     exp = 0.0
     assert_equal(obs, exp)
